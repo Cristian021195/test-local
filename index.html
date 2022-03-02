@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: whitesmoke;
+            font-family: sans-serif;
+        }
+        article label{
+            display: flex;
+            margin-bottom: 1em;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Etiquetas raras de HTML (no soportadas en todos los navegadores)</h1>
+        <section>
+            <article>
+                <h3>Etiqueta <b>details</b> y <b>summary</b></h3>
+                <details>
+                    <summary>Ver más</summary>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti facilis, magnam mollitia repudiandae perspiciatis consectetur commodi laudantium id non excepturi aspernatur blanditiis necessitatibus facere voluptatem pariatur error. Tempore, ipsum quae!</p>
+                </details>
+            </article>
+            <article>
+                <h3>Etiquetas de formulario <b>color</b> <b>color</b> <b>color</b></h3>
+                <label for="tema">Color: 
+                    <input type="color" name="tema" id="tema" value="#ff4d4d">
+                </label>
+                <label for="rango">Range: 
+                    <input type="range" name="rango" id="rango" max="10" min="1" value="5">
+                </label>
+                <label for="fecha-hora">datetime-local: 
+                    <input type="datetime-local" name="fecha-hora" id="fecha-hora" value="2022-03-05T19:30">
+                </label>
+                <label for="listado">datalist:
+                    <input type="text" name="" id="" list="listado">
+                    <datalist id="listado">
+                        <option value="opcion 1">Opcion #1</option>
+                        <option value="opcion 2">Opcion #2</option>
+                        <option value="opcion 3">Opcion #3</option>
+                    </datalist>
+                </label>
+                <label for="selects-grupo">optgroup:
+                    <select>
+                        <optgroup label="GRUPO 1">
+                            <option value="1-1">Opcion #1 - grupo 1</option>
+                            <option value="2-1">Opcion #2 - grupo 1</option>
+                        </optgroup>
+                        <optgroup label="GRUPO 2">
+                            <option value="1-2">Opcion #1 - grupo 2</option>
+                            <option value="2-2">Opcion #2 - grupo 2</option>
+                        </optgroup>
+                    </select>
+                </label>
+            </article>
+            <article>
+                <h3>Etiquetas de presentacion de información</h3>
+                <label for="metro">metro: 
+                    <meter value="50" max="100" min="0"></meter>
+                </label>
+                <label for="progreso">progress: 
+                    <progress></progress>
+                </label>
+                <label for="progreso-val">progress:
+                    <progress max="100" value="50"></progress>
+                </label>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
